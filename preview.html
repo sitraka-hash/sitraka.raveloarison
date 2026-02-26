@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Photographe - Ton Nom</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 40px;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+footer {
+  padding: 20px;
+  background: #000;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>TON NOM</h1>
+  <p>Photographe | Portrait | Nature | Événements</p>
+</header>
+
+<section class="gallery">
+  <img src="https://picsum.photos/600/800?1">
+  <img src="https://picsum.photos/600/800?2">
+  <img src="https://picsum.photos/600/800?3">
+  <img src="https://picsum.photos/600/800?4">
+  <img src="https://picsum.photos/600/800?5">
+  <img src="https://picsum.photos/600/800?6">
+</section>
+
+<footer>
+  <p>Contact : tonemail@email.com</p>
+</footer>
+
+</body>
+</html>
