@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio Photographe - Ton Nom</title>
+<!-- Ajouter le lien vers Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <style>
 body {
   margin: 0;
@@ -46,12 +48,32 @@ footer {
   background: #000;
   margin-top: 20px;
 }
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 30px;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #1877f2; /* Couleur Facebook */
+}
+
+/* Nouvelle classe pour la taille des icônes */
+.social-icons a {
+  font-size: 40px; /* Taille des icônes */
+}
 </style>
 </head>
 <body>
 
 <header>
-  <h1>TON NOM</h1>
+  <h1>TCHI</h1> <!-- Titre modifié ici -->
   <p>Photographe | Portrait | Nature | Événements</p>
 </header>
 
@@ -64,8 +86,23 @@ footer {
   <img src="https://picsum.photos/600/800?6">
 </section>
 
+<!-- Ajout des icônes sociales -->
+<section class="social-icons">
+  <a href="https://web.facebook.com/profile.php?id=61578874930270" target="_blank">
+    <i class="fab fa-facebook"></i>
+  </a>
+  <!-- Icône WhatsApp -->
+  <a href="https://wa.me/+261337970116" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <!-- Icône Contact (ouvre l'application de contacts) -->
+  <a href="tel:+261337970116">
+    <i class="fas fa-address-book"></i>
+  </a>
+</section>
+
 <footer>
-  <p>Contact : tonemail@email.com</p>
+  <!-- Supprimer le texte "Contact" ici -->
 </footer>
 
 </body>
