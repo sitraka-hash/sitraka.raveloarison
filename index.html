@@ -15,12 +15,37 @@
       text-align: center;
     }
 
+    /* Style du menu de navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+      padding: 10px;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: rgba(0, 0, 0, 1);
+    }
+
     header {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 40px;
+      margin-top: 60px; /* Assure que le header ne soit pas masqué par le menu */
     }
 
     header img {
@@ -32,6 +57,12 @@
     h1 {
       font-size: 40px;
       letter-spacing: 3px;
+    }
+
+    .description {
+      font-size: 24px;
+      font-weight: 300;
+      color: #aaa; /* Gris clair pour la description */
     }
 
     .gallery {
@@ -76,18 +107,56 @@
     .social-icons a:hover {
       color: #1877f2; /* Couleur Facebook */
     }
+
+    /* Style des onglets */
+    .tabs {
+      margin-top: 30px;
+    }
+
+    .tabs a {
+      color: white;
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 0 10px;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .tabs a:hover {
+      background-color: #1877f2; /* Changer la couleur au survol */
+    }
   </style>
 </head>
 <body>
 
-  <header>
+  <!-- Menu de navigation -->
+  <nav>
+    <a href="#top">Accueil</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="top">
     <!-- Ajouter le logo -->
     <img src="images/LOGO tchi.png" alt="Logo de TCHI">
-    <h1>TCHI</h1> <!-- Titre modifié ici -->
-    <p>Photographe | Portrait | Nature | Événements</p>
+    <h1>TCHI</h1>
+    <!-- Description sous le titre -->
+    <p class="description">Photographe Professionnel</p>
   </header>
 
-  <section class="gallery">
+  <!-- Onglets déplacés sous la description -->
+  <section class="tabs">
+    <a href="#top">Accueil</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">À propos</a>
+    <a href="#contact">Contact</a>
+  </section>
+
+  <!-- Section Portfolio -->
+  <section class="gallery" id="portfolio">
     <img src="https://picsum.photos/600/800?1" alt="Photo 1">
     <img src="https://picsum.photos/600/800?2" alt="Photo 2">
     <img src="https://picsum.photos/600/800?3" alt="Photo 3">
