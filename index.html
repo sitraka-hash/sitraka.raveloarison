@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Photographe - Ton Nom</title>
+  <!-- Ajouter le lien vers Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #fff; /* Fond blanc pour la page */
+      background-color: #111;
       color: white;
       text-align: center;
     }
@@ -20,30 +21,54 @@
       justify-content: center;
       align-items: center;
       padding: 40px;
-      margin-top: 20px;
-      background-color: #111; /* Fond sombre pour le header */
-      width: 100%;
+      margin-top: 60px; /* Pour laisser de l'espace entre le header et le contenu */
     }
 
     header img {
-      width: 150px;
-      height: auto;
-      margin-bottom: 20px;
+      width: 150px; /* Ajuste la largeur du logo */
+      height: auto; /* Pour garder les proportions du logo */
+      margin-bottom: 20px; /* Ajoute de l'espace sous le logo */
     }
 
     h1 {
       font-size: 40px;
       letter-spacing: 3px;
-      color: white;
     }
 
     .description {
       font-size: 24px;
       font-weight: 300;
-      color: #aaa;
+      color: #aaa; /* Gris clair pour la description */
     }
 
-    /* Section Portfolio */
+    /* Style des onglets */
+    .tabs {
+      margin-top: 20px;
+    }
+
+    .tabs a {
+      color: white;
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 0 10px;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .tabs a:hover {
+      background-color: #1877f2; /* Changer la couleur au survol */
+    }
+
+    /* Barre de séparation */
+    .separator {
+      width: 60%;
+      height: 2px;
+      background-color: #1877f2; /* Bleu clair */
+      margin: 20px 0; /* Espace au-dessus et en dessous de la barre */
+    }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -56,13 +81,13 @@
       height: 300px;
       object-fit: cover;
       transition: 0.4s;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Légère ombre autour des images */
     }
 
     .gallery img:hover {
       transform: scale(1.05);
       opacity: 0.8;
-      filter: blur(2px);
+      filter: blur(2px); /* Flou léger au survol */
     }
 
     .social-icons {
@@ -71,13 +96,14 @@
 
     .social-icons a {
       color: white;
-      font-size: 40px;
+      font-size: 40px; /* Taille des icônes */
       margin: 0 15px;
       transition: color 0.3s;
+      display: inline-block; /* S'assurer que les icônes sont sur une même ligne */
     }
 
     .social-icons a:hover {
-      color: #1877f2;
+      color: #1877f2; /* Couleur Facebook */
     }
 
   </style>
@@ -85,36 +111,48 @@
 <body>
 
   <header id="top">
-    <!-- Ajouter le logo localement -->
-    <img src="images/logo.png" alt="Logo de TCHI">
+    <!-- Ajouter le logo -->
+    <img src="images/LOGO tchi.png" alt="Logo de TCHI">
     <h1>TCHI</h1>
+    <!-- Description sous le titre -->
     <p class="description">Photographe Professionnel</p>
+
+    <!-- Barre de séparation entre la description et les onglets -->
+    <div class="separator"></div>
+
+    <!-- Onglets sous la description -->
+    <section class="tabs">
+      <a href="#top">Accueil</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">À propos</a>
+      <a href="#contact">Contact</a>
+    </section>
   </header>
 
-  <!-- Portfolio -->
+  <!-- Section Portfolio -->
   <section class="gallery" id="portfolio">
-    <!-- Remplace les liens des images par tes propres images locales -->
-    <img src="images/IMG_2536" alt="Photo 1">
-    <img src="images/photo2.jpg" alt="Photo 2">
-    <img src="images/photo3.jpg" alt="Photo 3">
-    <img src="images/photo4.jpg" alt="Photo 4">
-    <img src="images/photo5.jpg" alt="Photo 5">
-    <img src="images/photo6.jpg" alt="Photo 6">
+    <img src="https://IMG_2536.JPG" alt="Photo 1">
+    <img src="https://picsum.photos/600/800?2" alt="Photo 2">
+    <img src="https://picsum.photos/600/800?3" alt="Photo 3">
+    <img src="https://picsum.photos/600/800?4" alt="Photo 4">
+    <img src="https://picsum.photos/600/800?5" alt="Photo 5">
+    <img src="https://picsum.photos/600/800?6" alt="Photo 6">
   </section>
 
-  <footer>
-    <section class="social-icons">
-      <a href="https://web.facebook.com/profile.php?id=61578874930270" target="_blank">
-        <i class="fab fa-facebook"></i>
-      </a>
-      <a href="https://wa.me/261337970116" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-      <a href="tel:+261337970116">
-        <i class="fas fa-phone-alt"></i>
-      </a>
-    </section>
-  </footer>
+  <!-- Ajout des icônes sociales -->
+  <section class="social-icons">
+    <a href="https://web.facebook.com/profile.php?id=61578874930270" target="_blank">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <!-- Icône WhatsApp -->
+    <a href="https://wa.me/261337970116" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Icône de téléphone (vers l'application téléphone) -->
+    <a href="tel:+261337970116">
+      <i class="fas fa-phone-alt"></i>
+    </a>
+  </section>
 
 </body>
 </html>
